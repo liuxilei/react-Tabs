@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "chrome": "67"
+                },
+                "useBuiltIns": "usage"
+            },
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [ 
+            "transform-class-properties" //react中箭头函数支持
+        ],
+    ]
+}
