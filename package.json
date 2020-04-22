@@ -1,7 +1,7 @@
 {
   "name": "react-tabs",
   "version": "1.0.0",
-  "description": "",
+  "description": "基于react的简易Tab选项卡",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
