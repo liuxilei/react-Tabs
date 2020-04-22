@@ -1,5 +1,7 @@
 ## react-tab
 
+![示例](./resource/react-tab.gif)
+
 ## API
 ### Tabs
 
@@ -13,7 +15,7 @@
 |----------|------------------------------------------|-------------|-------|
 | tab | tab名称 | string | 必填 |
 
-### usage
+### example
 ```javascript
 const Demo = () => {
     const onTabChange = () => {
@@ -34,3 +36,4 @@ const Demo = () => {
     )
 }
 ```
+
