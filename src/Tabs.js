@@ -2,7 +2,7 @@ import React, { Fragment, useState, memo } from 'react'
 import PropTypes from 'prop-types';
 import "./tabs.css";
 
-const Tabs = memo(({ activeIndex, onTabChange, children }) => {
+const Tabs = ({ activeIndex, onTabChange, children }) => {
     const [active, setActiveIndex] = useState(activeIndex)
 
     const tabChange = (event, index) => {
@@ -26,13 +26,14 @@ const Tabs = memo(({ activeIndex, onTabChange, children }) => {
             })}
         </div>
     )
-});
+};
 
-export default Tabs;
+export default memo(Tabs);
 
 Tabs.propTypes = {
     activeIndex: PropTypes.number.isRequired,
     onTabChange: PropTypes.func.isRequired,
+    children: PropTypes.element.isRequired
 }
 
 export const Tab = ({ tab, children }) => {
@@ -44,6 +45,11 @@ export const Tab = ({ tab, children }) => {
             </div>
         </Fragment>
     )
+}
+
+Tab.propTypes = {
+    tab: PropTypes.string.isRequired,
+    children: PropTypes.element,
 }
 
 
